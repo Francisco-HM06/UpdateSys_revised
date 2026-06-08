@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard | UpdateSys</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="admin-dashboard">
+
+<div class="sidebar-layout">
+    <aside class="sidebar">
+        <a class="brand admin-brand" href="admin-dashboard.html">
+            <img class="logo" src="images/logo.jpg" alt="Update Salon Logo">
+            <span>UpdateSys Admin <small>Salon Management Portal</small></span>
+        </a>
+
+        <nav class="side-menu">
+            <a href="admin-dashboard.html">Dashboard</a>
+            <a href="manage-appointments.html">Manage Appointments</a>
+            <a href="records-management.html">Records Management</a>
+            <a href="admin-credentials.html">Admin Credentials</a>
+            <a href="#" onclick="logout()">Logout</a>
+        </nav>
+    </aside>
+
+    <main class="admin-main">
+        <div class="admin-top compact-admin-top">
+            <div>
+                <h1>Dashboard Overview</h1>
+            </div>
+            <div class="card owner-card compact-owner-card">
+                <b>Owner/Admin</b>
+                <p>Jocelyn Cardenas Roque</p>
+            </div>
+        </div>
+
+        <div class="dashboard-cards">
+            <div class="card stat"><p>Total Appointments</p><h3 id="totalAppointmentsCount">0</h3></div>
+            <div class="card stat"><p>Pending</p><h3 id="pendingAppointmentsCount">0</h3></div>
+            <div class="card stat"><p>Approved</p><h3 id="approvedAppointmentsCount">0</h3></div>
+            <div class="card stat"><p>Completed</p><h3 id="completedAppointmentsCount">0</h3></div>
+            <div class="card stat"><p>Cancelled</p><h3 id="reportCancelled">0</h3></div>
+            <div class="card stat payment-stat"><p>Payment Summary</p><h3 id="reportRevenue">PHP 0</h3><small id="paymentSummaryDetails">Cash: 0 | GCash: 0</small></div>
+        </div>
+
+        <section class="card admin-section">
+            <div class="section-title left no-margin">
+                <h2>Dashboard Charts</h2>
+            </div>
+            <div class="dashboard-chart-grid">
+                <div class="chart-card">
+                    <h3>Appointment Status</h3>
+                    <div id="statusChart" class="simple-chart"></div>
+                </div>
+                <div class="chart-card">
+                    <h3>Most Availed Services</h3>
+                    <div id="serviceChart" class="simple-chart"></div>
+                </div>
+                <div class="chart-card">
+                    <h3>Payment Method Summary</h3>
+                    <div id="paymentChart" class="simple-chart"></div>
+                </div>
+            </div>
+        </section>
+    </main>
+</div>
+
+<script src="js/app.js"></script>
+</body>
+</html>

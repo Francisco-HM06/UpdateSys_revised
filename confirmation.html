@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking Submitted | UpdateSys</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="confirmation">
+
+<header class="navbar">
+    <div class="container nav-inner">
+        <a class="brand" href="index.html">
+            <img class="logo" src="images/logo.jpg" alt="Update Salon Logo">
+            <span>Update Salon <small>by Josie</small></span>
+        </a>
+
+        <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+
+        <nav class="nav-links" id="mainNav">
+            <a href="index.html" data-page="home">Home</a>
+            <a href="index.html#servicesSection">Services</a>
+            <a href="index.html#teamSection">Our Team</a>
+            <a href="booking.html" data-page="booking">Book Appointment</a>
+        </nav>
+
+        <div class="nav-actions">
+            <a class="btn btn-light" href="booking.html">Book Appointment</a>
+        </div>
+    </div>
+</header>
+
+
+<section class="section">
+    <div class="container narrow">
+        <div class="card confirmation-card">
+            <div class="big-icon">✓</div>
+            <h1>Appointment Request Submitted</h1>
+
+            <div id="confirmationDetails" class="summary-box"></div>
+            <div class="form-actions center">
+                <a class="btn btn-primary" href="check-status.html">Check Status</a>
+                <a class="btn btn-light" href="index.html">Back to Home</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<footer class="footer" id="contactFooter">
+    <div class="container footer-simple">
+        <p>Update Salon by Josie &copy; 2026 | Maunlad Mall 1 Extension, Malolos | 8:00 AM - 5:00 PM</p>
+        <p><b>Contact Us:</b> Visit our salon or message our Facebook page for inquiries and appointment concerns.</p>
+    </div>
+</footer>
+
+<script src="js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Records Management | UpdateSys Admin</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="records">
+
+<div class="sidebar-layout">
+
+<aside class="sidebar">
+    <a class="brand admin-brand" href="admin-dashboard.html">
+        <img class="logo" src="images/logo.jpg" alt="Update Salon Logo">
+        <span>UpdateSys Admin <small>Salon Management Portal</small></span>
+    </a>
+
+    <nav class="side-menu">
+        <a href="admin-dashboard.html">Dashboard</a>
+        <a href="manage-appointments.html">Manage Appointments</a>
+        <a href="records-management.html">Records Management</a>
+        <a href="admin-credentials.html">Admin Credentials</a>
+        <a href="#" onclick="logout()">Logout</a>
+    </nav>
+</aside>
+
+
+    <main class="admin-main">
+        <div class="admin-top">
+            <div>
+                <h1>Records Management</h1>
+            </div>
+        </div>
+
+        <div class="card table-wrap">
+            <h2>Customer Records</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Customer</th>
+                        <th>Contact</th>
+                        <th>Email</th>
+                        <th>Service</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody id="customerRecords"></tbody>
+            </table>
+        </div>
+
+        <div class="card table-wrap">
+            <h2>Staff Service Records</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Staff</th>
+                        <th>Service Performed</th>
+                        <th>Date</th>
+                        <th>Service Status</th>
+                    </tr>
+                </thead>
+                <tbody id="staffRecords"></tbody>
+            </table>
+        </div>
+
+        <div class="card table-wrap">
+            <h2>Payment Records</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Customer</th>
+                        <th>Method</th>
+                        <th>Reference</th>
+                        <th>Amount</th>
+                        <th>Appointment Status</th>
+                    </tr>
+                </thead>
+                <tbody id="paymentRecords"></tbody>
+            </table>
+        </div>
+    </main>
+</div>
+
+<script src="js/app.js"></script>
+</body>
+</html>
